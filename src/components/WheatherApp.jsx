@@ -25,14 +25,14 @@ export const WheatherApp = () => {
 
     return (
         <div className="container">
-            <h1>Aplicación del Clima</h1>
+            <h1>WheatherApp</h1>
             <form onSubmit={handleSubmit}>
                 <input 
                     type="text"
                     value={city}
                     onChange={handleCityChange}
                 />
-                <button type="submit">Buscar</button>
+                <button type="submit">Search</button>
             </form>  
             {dateWheather && <WeatherDetails weatherData={dateWheather} difKelvin={difKelvin} />} {/* Renderiza el componente WeatherDetails si hay datos */}
         </div>
